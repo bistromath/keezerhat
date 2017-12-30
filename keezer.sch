@@ -1,0 +1,616 @@
+EESchema Schematic File Version 4
+LIBS:keezer-cache
+EELAYER 26 0
+EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 1 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 7700 4900 1800 900 
+U 5A456F01
+F0 "Temp Sensor Interface 2" 60
+F1 "Temp_Sensor_Interface.sch" 60
+F2 "Power" U L 7700 5250 60 
+F3 "Temp" U L 7700 5450 60 
+F4 "Temp_Out" U R 9500 5250 60 
+$EndSheet
+$Sheet
+S 7750 6550 1750 850 
+U 5A456F58
+F0 "Strain Gauge Interface 1" 60
+F1 "Strain_Gauge_Interface.sch" 60
+F2 "E+" U L 7750 7150 60 
+F3 "E-" U L 7750 7050 60 
+F4 "O+" U L 7750 6950 60 
+F5 "O-" U L 7750 6850 60 
+F6 "Weight_Out" U R 9500 6850 60 
+$EndSheet
+$Comp
+L Connector:Conn_01x03_Female J4
+U 1 1 5A45704E
+P 7200 4150
+F 0 "J4" H 7227 4176 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 7227 4085 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 7200 4150 50  0001 C CNN
+F 3 "~" H 7200 4150 50  0001 C CNN
+	1    7200 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J5
+U 1 1 5A457186
+P 7200 5350
+F 0 "J5" H 7227 5376 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 7227 5285 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 7200 5350 50  0001 C CNN
+F 3 "~" H 7200 5350 50  0001 C CNN
+	1    7200 5350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J6
+U 1 1 5A465070
+P 7200 7050
+F 0 "J6" H 7094 6625 50  0000 C CNN
+F 1 "Conn_01x04_Female" H 7094 6716 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 7200 7050 50  0001 C CNN
+F 3 "~" H 7200 7050 50  0001 C CNN
+	1    7200 7050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J7
+U 1 1 5A465262
+P 7200 8350
+F 0 "J7" H 7094 7925 50  0000 C CNN
+F 1 "Conn_01x04_Female" H 7094 8016 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 7200 8350 50  0001 C CNN
+F 3 "~" H 7200 8350 50  0001 C CNN
+	1    7200 8350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J8
+U 1 1 5A46529B
+P 7200 9550
+F 0 "J8" H 7094 9125 50  0000 C CNN
+F 1 "Conn_01x04_Female" H 7094 9216 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 7200 9550 50  0001 C CNN
+F 3 "~" H 7200 9550 50  0001 C CNN
+	1    7200 9550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J9
+U 1 1 5A4652DB
+P 7200 10750
+F 0 "J9" H 7094 10325 50  0000 C CNN
+F 1 "Conn_01x04_Female" H 7094 10416 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 7200 10750 50  0001 C CNN
+F 3 "~" H 7200 10750 50  0001 C CNN
+	1    7200 10750
+	-1   0    0    1   
+$EndComp
+$Sheet
+S 7800 12200 1700 1200
+U 5A465332
+F0 "Relay Interface" 60
+F1 "Relay_Interface.sch" 60
+F2 "Coil-" U L 7800 12650 60 
+F3 "Coil+" U L 7800 12500 60 
+F4 "+12V_ISO" U L 7800 12800 60 
+F5 "GND_ISO" U L 7800 12900 60 
+F6 "Relay_In" U R 9500 12850 60 
+$EndSheet
+$Comp
+L Connector:Conn_01x02_Female J2
+U 1 1 5A465370
+P 7050 12400
+F 0 "J2" H 7078 12376 50  0000 L CNN
+F 1 "Relay" H 7078 12285 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-2.54mm_2pol" H 7050 12400 50  0001 C CNN
+F 3 "~" H 7050 12400 50  0001 C CNN
+	1    7050 12400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Barrel_Jack J1
+U 1 1 5A46547A
+P 6900 12800
+F 0 "J1" H 6978 13125 50  0000 C CNN
+F 1 "Barrel_Jack" H 6978 13034 50  0000 C CNN
+F 2 "Connectors:Barrel_Jack_CUI_PJ-102AH" H 6950 12760 50  0001 C CNN
+F 3 "~" H 6950 12760 50  0001 C CNN
+	1    6900 12800
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 7750 7850 1750 850 
+U 5A46629B
+F0 "sheet5A466294" 60
+F1 "Strain_Gauge_Interface.sch" 60
+F2 "E+" U L 7750 8450 60 
+F3 "E-" U L 7750 8350 60 
+F4 "O+" U L 7750 8250 60 
+F5 "O-" U L 7750 8150 60 
+F6 "Weight_Out" U R 9500 8150 60 
+$EndSheet
+$Sheet
+S 7750 9050 1750 850 
+U 5A4663D1
+F0 "sheet5A4663CA" 60
+F1 "Strain_Gauge_Interface.sch" 60
+F2 "E+" U L 7750 9650 60 
+F3 "E-" U L 7750 9550 60 
+F4 "O+" U L 7750 9450 60 
+F5 "O-" U L 7750 9350 60 
+F6 "Weight_Out" U R 9500 9350 60 
+$EndSheet
+$Sheet
+S 7750 10250 1750 850 
+U 5A4665AC
+F0 "sheet5A4665A5" 60
+F1 "Strain_Gauge_Interface.sch" 60
+F2 "E+" U L 7750 10850 60 
+F3 "E-" U L 7750 10750 60 
+F4 "O+" U L 7750 10650 60 
+F5 "O-" U L 7750 10550 60 
+F6 "Weight_Out" U R 9500 10550 60 
+$EndSheet
+$Sheet
+S 7700 3700 1800 900 
+U 5A466974
+F0 "sheet5A46696F" 60
+F1 "Temp_Sensor_Interface.sch" 60
+F2 "Power" U L 7700 4050 60 
+F3 "Temp" U L 7700 4250 60 
+F4 "Temp_Out" U R 9500 4050 60 
+$EndSheet
+$Comp
+L modules:Arduino_UNO_R3 A1
+U 1 1 5A46E243
+P 12950 8150
+F 0 "A1" H 12950 9328 50  0000 C CNN
+F 1 "Arduino_UNO_R3" H 12950 9237 50  0000 C CNN
+F 2 "Modules:Arduino_UNO_R3" H 13100 7100 50  0001 L CNN
+F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 12750 9200 50  0001 C CNN
+	1    12950 8150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x08_Female J11
+U 1 1 5A46EC75
+P 14850 8450
+F 0 "J11" H 14878 8426 50  0000 L CNN
+F 1 "Display" H 14878 8335 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 14850 8450 50  0001 C CNN
+F 3 "~" H 14850 8450 50  0001 C CNN
+	1    14850 8450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J12
+U 1 1 5A46F902
+P 15350 6950
+F 0 "J12" H 15378 6926 50  0000 L CNN
+F 1 "Mode Switch" H 15378 6835 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 15350 6950 50  0001 C CNN
+F 3 "~" H 15350 6950 50  0001 C CNN
+	1    15350 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J13
+U 1 1 5A46FB16
+P 15350 7300
+F 0 "J13" H 15377 7276 50  0000 L CNN
+F 1 "Tare Switch" H 15377 7185 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 15350 7300 50  0001 C CNN
+F 3 "~" H 15350 7300 50  0001 C CNN
+	1    15350 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J14
+U 1 1 5A46FCEF
+P 15350 7850
+F 0 "J14" H 15378 7876 50  0000 L CNN
+F 1 "Rocker Switch" H 15378 7785 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 15350 7850 50  0001 C CNN
+F 3 "~" H 15350 7850 50  0001 C CNN
+	1    15350 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J3
+U 1 1 5A472ABC
+P 7050 13350
+F 0 "J3" H 7078 13326 50  0000 L CNN
+F 1 "Fan" H 7078 13235 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 7050 13350 50  0001 C CNN
+F 3 "~" H 7050 13350 50  0001 C CNN
+	1    7050 13350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 13350 7250 13350
+Wire Wire Line
+	7250 13450 7450 13450
+Wire Wire Line
+	7200 12700 7350 12700
+Wire Wire Line
+	7600 12700 7600 12800
+Wire Wire Line
+	7600 12800 7800 12800
+Wire Wire Line
+	7800 12900 7450 12900
+Wire Wire Line
+	7450 13450 7450 12900
+Connection ~ 7450 12900
+Wire Wire Line
+	7450 12900 7200 12900
+Wire Wire Line
+	7350 13350 7350 12700
+Connection ~ 7350 12700
+Wire Wire Line
+	7350 12700 7600 12700
+Wire Wire Line
+	7250 12400 7600 12400
+Wire Wire Line
+	7600 12400 7600 12500
+Wire Wire Line
+	7600 12500 7800 12500
+Wire Wire Line
+	7800 12650 7500 12650
+Wire Wire Line
+	7500 12650 7500 12500
+Wire Wire Line
+	7500 12500 7250 12500
+Wire Wire Line
+	9500 4050 11650 4050
+Wire Wire Line
+	11650 4050 11650 8150
+Wire Wire Line
+	11650 8150 12450 8150
+Wire Wire Line
+	12450 8250 11550 8250
+Wire Wire Line
+	11550 8250 11550 5250
+Wire Wire Line
+	11550 5250 9500 5250
+Wire Wire Line
+	9500 6850 11450 6850
+Wire Wire Line
+	11450 6850 11450 8350
+Wire Wire Line
+	11450 8350 12450 8350
+Wire Wire Line
+	12450 8450 11300 8450
+Wire Wire Line
+	11300 8450 11300 8150
+Wire Wire Line
+	11300 8150 9500 8150
+Wire Wire Line
+	12450 8550 11300 8550
+Wire Wire Line
+	11300 8550 11300 9350
+Wire Wire Line
+	11300 9350 9500 9350
+Wire Wire Line
+	12450 8650 11400 8650
+Wire Wire Line
+	11400 8650 11400 10550
+Wire Wire Line
+	11400 10550 9500 10550
+Wire Wire Line
+	9500 12850 13800 12850
+$Comp
+L power:GND #PWR04
+U 1 1 5A4781A3
+P 14650 8150
+F 0 "#PWR04" H 14650 7900 50  0001 C CNN
+F 1 "GND" V 14655 8022 50  0000 R CNN
+F 2 "" H 14650 8150 50  0001 C CNN
+F 3 "" H 14650 8150 50  0001 C CNN
+	1    14650 8150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14650 8250 14250 8250
+Wire Wire Line
+	14650 8350 14150 8350
+Wire Wire Line
+	14650 8850 14150 8850
+Wire Wire Line
+	14150 8850 14150 8450
+Wire Wire Line
+	13450 8450 14150 8450
+Wire Wire Line
+	14250 8550 14250 8750
+Wire Wire Line
+	14250 8750 14650 8750
+Wire Wire Line
+	13450 8550 14250 8550
+Wire Wire Line
+	13450 8650 14650 8650
+Wire Wire Line
+	14050 8750 14050 8950
+Wire Wire Line
+	14050 8950 14350 8950
+Wire Wire Line
+	14350 8950 14350 8450
+Wire Wire Line
+	14350 8450 14650 8450
+Wire Wire Line
+	13450 8750 14050 8750
+Wire Wire Line
+	14650 8550 14450 8550
+Wire Wire Line
+	14450 8550 14450 9050
+Wire Wire Line
+	14450 9050 13950 9050
+Wire Wire Line
+	13950 9050 13950 8850
+Wire Wire Line
+	13950 8850 13450 8850
+$Comp
+L power:GND #PWR05
+U 1 1 5A4800DF
+P 15150 7050
+F 0 "#PWR05" H 15150 6800 50  0001 C CNN
+F 1 "GND" H 15155 6877 50  0000 C CNN
+F 2 "" H 15150 7050 50  0001 C CNN
+F 3 "" H 15150 7050 50  0001 C CNN
+	1    15150 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5A4802AD
+P 15150 7400
+F 0 "#PWR06" H 15150 7150 50  0001 C CNN
+F 1 "GND" H 15155 7227 50  0000 C CNN
+F 2 "" H 15150 7400 50  0001 C CNN
+F 3 "" H 15150 7400 50  0001 C CNN
+	1    15150 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5A48047B
+P 15150 7950
+F 0 "#PWR07" H 15150 7700 50  0001 C CNN
+F 1 "GND" H 15155 7777 50  0000 C CNN
+F 2 "" H 15150 7950 50  0001 C CNN
+F 3 "" H 15150 7950 50  0001 C CNN
+	1    15150 7950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15150 6950 14450 6950
+Wire Wire Line
+	14450 6950 14450 7750
+Wire Wire Line
+	14450 7750 13450 7750
+Wire Wire Line
+	13450 7850 14600 7850
+Wire Wire Line
+	14600 7850 14600 7750
+Wire Wire Line
+	14600 7750 14800 7750
+Wire Wire Line
+	15150 7850 14700 7850
+Wire Wire Line
+	14700 7850 14700 7950
+Wire Wire Line
+	14700 7950 13450 7950
+Wire Wire Line
+	13450 8050 14800 8050
+Wire Wire Line
+	14800 7750 15150 7750
+Wire Wire Line
+	14800 8050 14800 7750
+Wire Wire Line
+	14800 7300 15150 7300
+Wire Wire Line
+	14800 7750 14800 7300
+Wire Wire Line
+	13800 8150 13450 8150
+Wire Wire Line
+	13800 8150 13800 12850
+$Comp
+L power:GND #PWR03
+U 1 1 5A48B13D
+P 12950 9500
+F 0 "#PWR03" H 12950 9250 50  0001 C CNN
+F 1 "GND" H 12955 9327 50  0000 C CNN
+F 2 "" H 12950 9500 50  0001 C CNN
+F 3 "" H 12950 9500 50  0001 C CNN
+	1    12950 9500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR02
+U 1 1 5A48B320
+P 12850 6650
+F 0 "#PWR02" H 12850 6500 50  0001 C CNN
+F 1 "+3V3" H 12865 6823 50  0000 C CNN
+F 2 "" H 12850 6650 50  0001 C CNN
+F 3 "" H 12850 6650 50  0001 C CNN
+	1    12850 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 5A48B57C
+P 12600 6650
+F 0 "#PWR01" H 12600 6500 50  0001 C CNN
+F 1 "+5V" H 12615 6823 50  0000 C CNN
+F 2 "" H 12600 6650 50  0001 C CNN
+F 3 "" H 12600 6650 50  0001 C CNN
+	1    12600 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J10
+U 1 1 5A48CFF9
+P 11800 7850
+F 0 "J10" H 11906 8128 50  0000 C CNN
+F 1 "REF" H 11906 8037 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 11800 7850 50  0001 C CNN
+F 3 "~" H 11800 7850 50  0001 C CNN
+	1    11800 7850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12450 7950 12250 7950
+Wire Wire Line
+	12250 7950 12250 7850
+Wire Wire Line
+	12250 7850 12000 7850
+Wire Wire Line
+	12000 7750 12100 7750
+Wire Wire Line
+	12100 7750 12100 6850
+Wire Wire Line
+	12100 6850 12600 6850
+Wire Wire Line
+	12600 6850 12600 6650
+Wire Wire Line
+	12850 6650 12850 6850
+Wire Wire Line
+	12850 6900 12150 6900
+Wire Wire Line
+	12150 6900 12150 7950
+Wire Wire Line
+	12150 7950 12000 7950
+Wire Wire Line
+	12750 7150 12750 6950
+Wire Wire Line
+	12750 6850 12600 6850
+Connection ~ 12600 6850
+Wire Wire Line
+	12850 7150 12850 6900
+Connection ~ 12850 6900
+Wire Wire Line
+	12950 9250 12950 9350
+Wire Wire Line
+	13050 9250 13050 9350
+Wire Wire Line
+	13050 9350 12950 9350
+Connection ~ 12950 9350
+Wire Wire Line
+	12950 9350 12950 9400
+Wire Wire Line
+	12850 9400 12950 9400
+Wire Wire Line
+	12850 9250 12850 9400
+Connection ~ 12950 9400
+Wire Wire Line
+	12950 9400 12950 9500
+Wire Wire Line
+	14250 6850 12850 6850
+Wire Wire Line
+	14250 6850 14250 8250
+Connection ~ 12850 6850
+Wire Wire Line
+	12850 6850 12850 6900
+Wire Wire Line
+	14150 6950 12750 6950
+Wire Wire Line
+	14150 6950 14150 8350
+Connection ~ 12750 6950
+Wire Wire Line
+	12750 6950 12750 6850
+Wire Wire Line
+	7400 10550 7750 10550
+Wire Wire Line
+	7750 10650 7400 10650
+Wire Wire Line
+	7400 10750 7750 10750
+Wire Wire Line
+	7750 10850 7400 10850
+Wire Wire Line
+	7400 9650 7750 9650
+Wire Wire Line
+	7750 9550 7400 9550
+Wire Wire Line
+	7400 9450 7750 9450
+Wire Wire Line
+	7750 9350 7400 9350
+Wire Wire Line
+	7400 7150 7750 7150
+Wire Wire Line
+	7750 7050 7400 7050
+Wire Wire Line
+	7400 6950 7750 6950
+Wire Wire Line
+	7750 6850 7400 6850
+Wire Wire Line
+	7400 8150 7750 8150
+Wire Wire Line
+	7750 8250 7400 8250
+Wire Wire Line
+	7400 8350 7750 8350
+Wire Wire Line
+	7400 8450 7750 8450
+Text Notes 6600 7200 0    60   ~ 0
+White\nGreen\nBlack\nRed
+Text Notes 5900 7050 0    60   ~ 0
+To load cell:
+$Comp
+L power:GND #PWR015
+U 1 1 5A4D36EF
+P 7500 4400
+F 0 "#PWR015" H 7500 4150 50  0001 C CNN
+F 1 "GND" H 7505 4227 50  0000 C CNN
+F 2 "" H 7500 4400 50  0001 C CNN
+F 3 "" H 7500 4400 50  0001 C CNN
+	1    7500 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 4250 7700 4250
+Wire Wire Line
+	7400 4150 7600 4150
+Wire Wire Line
+	7600 4150 7600 4050
+Wire Wire Line
+	7600 4050 7700 4050
+Wire Wire Line
+	7400 4050 7500 4050
+Wire Wire Line
+	7500 4050 7500 4400
+$Comp
+L power:GND #PWR016
+U 1 1 5A4DFCAE
+P 7500 5600
+F 0 "#PWR016" H 7500 5350 50  0001 C CNN
+F 1 "GND" H 7505 5427 50  0000 C CNN
+F 2 "" H 7500 5600 50  0001 C CNN
+F 3 "" H 7500 5600 50  0001 C CNN
+	1    7500 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 5450 7700 5450
+Wire Wire Line
+	7400 5350 7600 5350
+Wire Wire Line
+	7600 5350 7600 5250
+Wire Wire Line
+	7600 5250 7700 5250
+Wire Wire Line
+	7400 5250 7500 5250
+Wire Wire Line
+	7500 5250 7500 5600
+$EndSCHEMATC
