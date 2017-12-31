@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 8
+Sheet 7 9
 Title ""
 Date ""
 Rev ""
@@ -32,7 +32,7 @@ AR Path="/5A456F58/5A4C63BA" Ref="U2"  Part="1"
 AR Path="/5A4665AC/5A4C63BA" Ref="U5"  Part="1" 
 AR Path="/5A46629B/5A4C63BA" Ref="U3"  Part="1" 
 AR Path="/5A4663D1/5A4C63BA" Ref="U4"  Part="1" 
-F 0 "U5" H 5041 3546 50  0000 L CNN
+F 0 "U2" H 5041 3546 50  0000 L CNN
 F 1 "INA828" H 5041 3455 50  0000 L CNN
 F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 4700 3500 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ina128.pdf" H 4700 3500 50  0001 C CNN
@@ -47,8 +47,8 @@ AR Path="/5A456F58/5A4C64A7" Ref="R5"  Part="1"
 AR Path="/5A4665AC/5A4C64A7" Ref="R11"  Part="1" 
 AR Path="/5A46629B/5A4C64A7" Ref="R7"  Part="1" 
 AR Path="/5A4663D1/5A4C64A7" Ref="R9"  Part="1" 
-F 0 "R11" H 4120 3546 50  0000 L CNN
-F 1 "49.9" H 4120 3455 50  0000 L CNN
+F 0 "R5" H 4120 3546 50  0000 L CNN
+F 1 "75.0" H 4120 3455 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 3980 3500 50  0001 C CNN
 F 3 "" H 4050 3500 50  0001 C CNN
 	1    4050 3500
@@ -62,7 +62,7 @@ AR Path="/5A456F58/5A4C656F" Ref="C5"  Part="1"
 AR Path="/5A4665AC/5A4C656F" Ref="C11"  Part="1" 
 AR Path="/5A46629B/5A4C656F" Ref="C7"  Part="1" 
 AR Path="/5A4663D1/5A4C656F" Ref="C9"  Part="1" 
-F 0 "C11" H 5015 3096 50  0000 L CNN
+F 0 "C5" H 5015 3096 50  0000 L CNN
 F 1 "0.1uF" H 5015 3005 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4938 2900 50  0001 C CNN
 F 3 "" H 4900 3050 50  0001 C CNN
@@ -166,7 +166,7 @@ AR Path="/5A456F58/5A4C6EE8" Ref="R6"  Part="1"
 AR Path="/5A4665AC/5A4C6EE8" Ref="R12"  Part="1" 
 AR Path="/5A46629B/5A4C6EE8" Ref="R8"  Part="1" 
 AR Path="/5A4663D1/5A4C6EE8" Ref="R10"  Part="1" 
-F 0 "R12" V 5593 3500 50  0000 C CNN
+F 0 "R6" V 5593 3500 50  0000 C CNN
 F 1 "10k" V 5684 3500 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 5730 3500 50  0001 C CNN
 F 3 "" H 5800 3500 50  0001 C CNN
@@ -181,7 +181,7 @@ AR Path="/5A456F58/5A4C6F98" Ref="C6"  Part="1"
 AR Path="/5A4665AC/5A4C6F98" Ref="C12"  Part="1" 
 AR Path="/5A46629B/5A4C6F98" Ref="C8"  Part="1" 
 AR Path="/5A4663D1/5A4C6F98" Ref="C10"  Part="1" 
-F 0 "C12" H 6115 3746 50  0000 L CNN
+F 0 "C6" H 6115 3746 50  0000 L CNN
 F 1 "1uF" H 6115 3655 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6038 3550 50  0001 C CNN
 F 3 "" H 6000 3700 50  0001 C CNN
@@ -213,21 +213,57 @@ Wire Wire Line
 	6000 3500 6000 3550
 Connection ~ 6000 3500
 Wire Wire Line
-	4600 3800 4600 3850
-Wire Wire Line
 	4600 2850 4600 2900
 Wire Wire Line
 	2850 2900 4600 2900
 Connection ~ 4600 2900
 Wire Wire Line
 	4600 2900 4600 3200
+Text Notes 4000 5500 0    60   ~ 0
+Gain=667. Full scale 1.8-3.8V corresponds to 3mV input.\nMax strain gauge offset ~~150uV. Strain gauge full-scale \noutput is 1mV/V  (or 5mV/5V). Don't exceed 4V or so on the\noutput in order to maintain common-mode input voltage\nrange.
+Text HLabel 5300 3900 2    60   UnSpc ~ 0
+REF
+$Comp
+L device:C C16
+U 1 1 5A4949C9
+P 4950 4100
+AR Path="/5A4665AC/5A4949C9" Ref="C16"  Part="1" 
+AR Path="/5A456F58/5A4949C9" Ref="C13"  Part="1" 
+AR Path="/5A46629B/5A4949C9" Ref="C14"  Part="1" 
+AR Path="/5A4663D1/5A4949C9" Ref="C15"  Part="1" 
+F 0 "C13" H 5065 4146 50  0000 L CNN
+F 1 "1uF" H 5065 4055 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4988 3950 50  0001 C CNN
+F 3 "" H 4950 4100 50  0001 C CNN
+	1    4950 4100
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	4700 3800 4700 3850
+	4600 3800 4600 3900
+$Comp
+L power:GND #PWR038
+U 1 1 5A494C2C
+P 4950 4350
+AR Path="/5A456F58/5A494C2C" Ref="#PWR038"  Part="1" 
+AR Path="/5A46629B/5A494C2C" Ref="#PWR039"  Part="1" 
+AR Path="/5A4663D1/5A494C2C" Ref="#PWR040"  Part="1" 
+AR Path="/5A4665AC/5A494C2C" Ref="#PWR041"  Part="1" 
+F 0 "#PWR041" H 4950 4100 50  0001 C CNN
+F 1 "GND" H 4955 4177 50  0000 C CNN
+F 2 "" H 4950 4350 50  0001 C CNN
+F 3 "" H 4950 4350 50  0001 C CNN
+	1    4950 4350
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	4700 3850 4600 3850
+	4700 3800 4700 3900
 Wire Wire Line
-	4600 3900 4600 3850
-Connection ~ 4600 3850
-Text Notes 1700 4700 0    60   ~ 0
-Note: INA828 output range in this configuration reaches to ~~2V. Operation above this is outside the input common-mode voltage range.
+	4700 3900 4950 3900
+Wire Wire Line
+	4950 3950 4950 3900
+Connection ~ 4950 3900
+Wire Wire Line
+	4950 3900 5300 3900
+Wire Wire Line
+	4950 4250 4950 4350
 $EndSCHEMATC

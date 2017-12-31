@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 1 8
+Sheet 1 9
 Title ""
 Date ""
 Rev ""
@@ -30,17 +30,18 @@ F0 "Strain Gauge Interface 1" 60
 F1 "Strain_Gauge_Interface.sch" 60
 F2 "E+" U L 7750 7150 60 
 F3 "E-" U L 7750 7050 60 
-F4 "O+" U L 7750 6950 60 
-F5 "O-" U L 7750 6850 60 
+F4 "O+" U L 7750 6850 60 
+F5 "O-" U L 7750 6950 60 
 F6 "Weight_Out" U R 9500 6850 60 
+F7 "REF" U R 9500 7150 60 
 $EndSheet
 $Comp
 L Connector:Conn_01x03_Female J4
 U 1 1 5A45704E
 P 7200 4150
 F 0 "J4" H 7227 4176 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 7227 4085 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 7200 4150 50  0001 C CNN
+F 1 "Temp 1" H 7227 4085 50  0000 L CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x03x2.50mm_Straight" H 7200 4150 50  0001 C CNN
 F 3 "~" H 7200 4150 50  0001 C CNN
 	1    7200 4150
 	-1   0    0    1   
@@ -50,8 +51,8 @@ L Connector:Conn_01x03_Female J5
 U 1 1 5A457186
 P 7200 5350
 F 0 "J5" H 7227 5376 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 7227 5285 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 7200 5350 50  0001 C CNN
+F 1 "Temp 2" H 7227 5285 50  0000 L CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x03x2.50mm_Straight" H 7200 5350 50  0001 C CNN
 F 3 "~" H 7200 5350 50  0001 C CNN
 	1    7200 5350
 	-1   0    0    1   
@@ -61,8 +62,8 @@ L Connector:Conn_01x04_Female J6
 U 1 1 5A465070
 P 7200 7050
 F 0 "J6" H 7094 6625 50  0000 C CNN
-F 1 "Conn_01x04_Female" H 7094 6716 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 7200 7050 50  0001 C CNN
+F 1 "Load 1" H 7094 6716 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_2x02x2.50mm_Straight" H 7200 7050 50  0001 C CNN
 F 3 "~" H 7200 7050 50  0001 C CNN
 	1    7200 7050
 	-1   0    0    1   
@@ -72,8 +73,8 @@ L Connector:Conn_01x04_Female J7
 U 1 1 5A465262
 P 7200 8350
 F 0 "J7" H 7094 7925 50  0000 C CNN
-F 1 "Conn_01x04_Female" H 7094 8016 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 7200 8350 50  0001 C CNN
+F 1 "Load 2" H 7094 8016 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_2x02x2.50mm_Straight" H 7200 8350 50  0001 C CNN
 F 3 "~" H 7200 8350 50  0001 C CNN
 	1    7200 8350
 	-1   0    0    1   
@@ -83,8 +84,8 @@ L Connector:Conn_01x04_Female J8
 U 1 1 5A46529B
 P 7200 9550
 F 0 "J8" H 7094 9125 50  0000 C CNN
-F 1 "Conn_01x04_Female" H 7094 9216 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 7200 9550 50  0001 C CNN
+F 1 "Load 3" H 7094 9216 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_2x02x2.50mm_Straight" H 7200 9550 50  0001 C CNN
 F 3 "~" H 7200 9550 50  0001 C CNN
 	1    7200 9550
 	-1   0    0    1   
@@ -94,8 +95,8 @@ L Connector:Conn_01x04_Female J9
 U 1 1 5A4652DB
 P 7200 10750
 F 0 "J9" H 7094 10325 50  0000 C CNN
-F 1 "Conn_01x04_Female" H 7094 10416 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 7200 10750 50  0001 C CNN
+F 1 "Load 4" H 7094 10416 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_2x02x2.50mm_Straight" H 7200 10750 50  0001 C CNN
 F 3 "~" H 7200 10750 50  0001 C CNN
 	1    7200 10750
 	-1   0    0    1   
@@ -117,7 +118,7 @@ U 1 1 5A465370
 P 7050 12400
 F 0 "J2" H 7078 12376 50  0000 L CNN
 F 1 "Relay" H 7078 12285 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-2.54mm_2pol" H 7050 12400 50  0001 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 7050 12400 50  0001 C CNN
 F 3 "~" H 7050 12400 50  0001 C CNN
 	1    7050 12400
 	-1   0    0    -1  
@@ -140,9 +141,10 @@ F0 "sheet5A466294" 60
 F1 "Strain_Gauge_Interface.sch" 60
 F2 "E+" U L 7750 8450 60 
 F3 "E-" U L 7750 8350 60 
-F4 "O+" U L 7750 8250 60 
-F5 "O-" U L 7750 8150 60 
+F4 "O+" U L 7750 8150 60 
+F5 "O-" U L 7750 8250 60 
 F6 "Weight_Out" U R 9500 8150 60 
+F7 "REF" U R 9500 8450 60 
 $EndSheet
 $Sheet
 S 7750 9050 1750 850 
@@ -151,9 +153,10 @@ F0 "sheet5A4663CA" 60
 F1 "Strain_Gauge_Interface.sch" 60
 F2 "E+" U L 7750 9650 60 
 F3 "E-" U L 7750 9550 60 
-F4 "O+" U L 7750 9450 60 
-F5 "O-" U L 7750 9350 60 
+F4 "O+" U L 7750 9350 60 
+F5 "O-" U L 7750 9450 60 
 F6 "Weight_Out" U R 9500 9350 60 
+F7 "REF" U R 9500 9650 60 
 $EndSheet
 $Sheet
 S 7750 10250 1750 850 
@@ -162,9 +165,10 @@ F0 "sheet5A4665A5" 60
 F1 "Strain_Gauge_Interface.sch" 60
 F2 "E+" U L 7750 10850 60 
 F3 "E-" U L 7750 10750 60 
-F4 "O+" U L 7750 10650 60 
-F5 "O-" U L 7750 10550 60 
+F4 "O+" U L 7750 10550 60 
+F5 "O-" U L 7750 10650 60 
 F6 "Weight_Out" U R 9500 10550 60 
+F7 "REF" U R 9500 10850 60 
 $EndSheet
 $Sheet
 S 7700 3700 1800 900 
@@ -192,7 +196,7 @@ U 1 1 5A46EC75
 P 14850 8450
 F 0 "J11" H 14878 8426 50  0000 L CNN
 F 1 "Display" H 14878 8335 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 14850 8450 50  0001 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_2x04x2.50mm_Straight" H 14850 8450 50  0001 C CNN
 F 3 "~" H 14850 8450 50  0001 C CNN
 	1    14850 8450
 	1    0    0    -1  
@@ -202,8 +206,8 @@ L Connector:Conn_01x02_Female J12
 U 1 1 5A46F902
 P 15350 6950
 F 0 "J12" H 15378 6926 50  0000 L CNN
-F 1 "Mode Switch" H 15378 6835 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 15350 6950 50  0001 C CNN
+F 1 "Mode" H 15378 6835 50  0000 L CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 15350 6950 50  0001 C CNN
 F 3 "~" H 15350 6950 50  0001 C CNN
 	1    15350 6950
 	1    0    0    -1  
@@ -213,8 +217,8 @@ L Connector:Conn_01x02_Female J13
 U 1 1 5A46FB16
 P 15350 7300
 F 0 "J13" H 15377 7276 50  0000 L CNN
-F 1 "Tare Switch" H 15377 7185 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 15350 7300 50  0001 C CNN
+F 1 "Tare" H 15377 7185 50  0000 L CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 15350 7300 50  0001 C CNN
 F 3 "~" H 15350 7300 50  0001 C CNN
 	1    15350 7300
 	1    0    0    -1  
@@ -224,8 +228,8 @@ L Connector:Conn_01x03_Female J14
 U 1 1 5A46FCEF
 P 15350 7850
 F 0 "J14" H 15378 7876 50  0000 L CNN
-F 1 "Rocker Switch" H 15378 7785 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 15350 7850 50  0001 C CNN
+F 1 "Rocker" H 15378 7785 50  0000 L CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x03x2.50mm_Straight" H 15350 7850 50  0001 C CNN
 F 3 "~" H 15350 7850 50  0001 C CNN
 	1    15350 7850
 	1    0    0    -1  
@@ -236,7 +240,7 @@ U 1 1 5A472ABC
 P 7050 13350
 F 0 "J3" H 7078 13326 50  0000 L CNN
 F 1 "Fan" H 7078 13235 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 7050 13350 50  0001 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 7050 13350 50  0001 C CNN
 F 3 "~" H 7050 13350 50  0001 C CNN
 	1    7050 13350
 	-1   0    0    -1  
@@ -329,27 +333,9 @@ Wire Wire Line
 Wire Wire Line
 	14650 8350 14150 8350
 Wire Wire Line
-	14650 8850 14150 8850
-Wire Wire Line
-	14150 8850 14150 8450
-Wire Wire Line
-	13450 8450 14150 8450
-Wire Wire Line
-	14250 8550 14250 8750
-Wire Wire Line
-	14250 8750 14650 8750
-Wire Wire Line
 	13450 8550 14250 8550
 Wire Wire Line
-	13450 8650 14650 8650
-Wire Wire Line
 	14050 8750 14050 8950
-Wire Wire Line
-	14050 8950 14350 8950
-Wire Wire Line
-	14350 8950 14350 8450
-Wire Wire Line
-	14350 8450 14650 8450
 Wire Wire Line
 	13450 8750 14050 8750
 Wire Wire Line
@@ -402,27 +388,7 @@ Wire Wire Line
 Wire Wire Line
 	14450 7750 13450 7750
 Wire Wire Line
-	13450 7850 14600 7850
-Wire Wire Line
-	14600 7850 14600 7750
-Wire Wire Line
-	14600 7750 14800 7750
-Wire Wire Line
-	15150 7850 14700 7850
-Wire Wire Line
-	14700 7850 14700 7950
-Wire Wire Line
-	14700 7950 13450 7950
-Wire Wire Line
-	13450 8050 14800 8050
-Wire Wire Line
-	14800 7750 15150 7750
-Wire Wire Line
-	14800 8050 14800 7750
-Wire Wire Line
 	14800 7300 15150 7300
-Wire Wire Line
-	14800 7750 14800 7300
 Wire Wire Line
 	13800 8150 13450 8150
 Wire Wire Line
@@ -564,7 +530,7 @@ Wire Wire Line
 Wire Wire Line
 	7400 8450 7750 8450
 Text Notes 6600 7200 0    60   ~ 0
-White\nGreen\nBlack\nRed
+Green\nWhite\nBlack\nRed
 Text Notes 5900 7050 0    60   ~ 0
 To load cell:
 $Comp
@@ -613,4 +579,134 @@ Wire Wire Line
 	7400 5250 7500 5250
 Wire Wire Line
 	7500 5250 7500 5600
+$Sheet
+S 10900 11150 1650 900 
+U 5A486C54
+F0 "Reference" 60
+F1 "Reference.sch" 60
+F2 "VIN" U R 12550 11450 60 
+F3 "VOUT" U L 10900 11450 60 
+$EndSheet
+$Comp
+L power:+5V #PWR037
+U 1 1 5A48F52C
+P 12700 11350
+F 0 "#PWR037" H 12700 11200 50  0001 C CNN
+F 1 "+5V" H 12715 11523 50  0000 C CNN
+F 2 "" H 12700 11350 50  0001 C CNN
+F 3 "" H 12700 11350 50  0001 C CNN
+	1    12700 11350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12550 11450 12700 11450
+Wire Wire Line
+	12700 11450 12700 11350
+Wire Wire Line
+	10900 11450 10050 11450
+Wire Wire Line
+	10050 11450 10050 10850
+Wire Wire Line
+	10050 10850 9500 10850
+Wire Wire Line
+	10050 10850 10050 9650
+Wire Wire Line
+	10050 9650 9500 9650
+Connection ~ 10050 10850
+Wire Wire Line
+	10050 9650 10050 8450
+Wire Wire Line
+	10050 8450 9500 8450
+Connection ~ 10050 9650
+Wire Wire Line
+	10050 8450 10050 7150
+Wire Wire Line
+	10050 7150 9500 7150
+Connection ~ 10050 8450
+$Comp
+L Connector:Conn_01x03_Male J15
+U 1 1 5A49466C
+P 7950 2850
+F 0 "J15" V 7800 2850 50  0000 C CNN
+F 1 "Temp VCC" V 7900 2850 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 7950 2850 50  0001 C CNN
+F 3 "~" H 7950 2850 50  0001 C CNN
+	1    7950 2850
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:+3V3 #PWR09
+U 1 1 5A4B2627
+P 8250 2950
+F 0 "#PWR09" H 8250 2800 50  0001 C CNN
+F 1 "+3V3" H 8265 3123 50  0000 C CNN
+F 2 "" H 8250 2950 50  0001 C CNN
+F 3 "" H 8250 2950 50  0001 C CNN
+	1    8250 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR010
+U 1 1 5A4B2B7E
+P 7650 2950
+F 0 "#PWR010" H 7650 2800 50  0001 C CNN
+F 1 "+5V" H 7665 3123 50  0000 C CNN
+F 2 "" H 7650 2950 50  0001 C CNN
+F 3 "" H 7650 2950 50  0001 C CNN
+	1    7650 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 3100 8050 3050
+Wire Wire Line
+	7650 3100 7850 3100
+Wire Wire Line
+	7850 3100 7850 3050
+Wire Wire Line
+	7650 2950 7650 3100
+Wire Wire Line
+	7600 4050 7600 3350
+Wire Wire Line
+	7600 3350 7950 3350
+Wire Wire Line
+	7950 3350 7950 3050
+Connection ~ 7600 4050
+Wire Wire Line
+	7600 4150 7600 5250
+Connection ~ 7600 4150
+Connection ~ 7600 5250
+Wire Wire Line
+	8250 3100 8250 2950
+Wire Wire Line
+	8050 3100 8250 3100
+Wire Wire Line
+	13450 8450 14650 8450
+Wire Wire Line
+	14250 8850 14650 8850
+Wire Wire Line
+	14250 8550 14250 8850
+Wire Wire Line
+	13450 8650 14350 8650
+Wire Wire Line
+	14350 8650 14350 8750
+Wire Wire Line
+	14350 8750 14650 8750
+Wire Wire Line
+	14550 8950 14550 8650
+Wire Wire Line
+	14550 8650 14650 8650
+Wire Wire Line
+	14050 8950 14550 8950
+Wire Wire Line
+	13450 8050 14800 8050
+Wire Wire Line
+	14800 7300 14800 8050
+Wire Wire Line
+	15000 7950 15000 7750
+Wire Wire Line
+	15000 7750 15150 7750
+Wire Wire Line
+	13450 7950 15000 7950
+Wire Wire Line
+	13450 7850 15150 7850
 $EndSCHEMATC

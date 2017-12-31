@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 8
+Sheet 4 9
 Title ""
 Date ""
 Rev ""
@@ -25,23 +25,12 @@ GND_ISO
 Text HLabel 3450 3250 0    60   UnSpc ~ 0
 Relay_In
 $Comp
-L Transistor:2N3906 Q1
-U 1 1 5A469B52
-P 5950 3150
-F 0 "Q1" H 6141 3104 50  0000 L CNN
-F 1 "2N5194" H 6141 3195 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-220-3_Vertical" H 6150 3075 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 5950 3150 50  0001 L CNN
-	1    5950 3150
-	1    0    0    1   
-$EndComp
-$Comp
-L opto:4N25 U1
+L opto:LTV-356T U1
 U 1 1 5A469C25
 P 4650 3350
 F 0 "U1" H 4650 3675 50  0000 C CNN
-F 1 "4N25" H 4650 3584 50  0000 C CNN
-F 2 "Housings_DIP:DIP-6_W7.62mm" H 4450 3150 50  0001 L CIN
+F 1 "FOD817D3SD" H 4650 3584 50  0000 C CNN
+F 2 "Housings_SOIC:SO-4_4.4x3.6mm_Pitch2.54mm" H 4450 3150 50  0001 L CIN
 F 3 "https://www.vishay.com/docs/83725/4n25.pdf" H 4650 3350 50  0001 L CNN
 	1    4650 3350
 	1    0    0    -1  
@@ -90,8 +79,6 @@ Wire Wire Line
 Wire Wire Line
 	4950 3450 5000 3450
 Wire Wire Line
-	5000 3350 4950 3350
-Wire Wire Line
 	6050 2550 6050 2950
 Wire Wire Line
 	6050 3350 6050 3450
@@ -103,8 +90,6 @@ Wire Wire Line
 	5000 3900 5000 4000
 Wire Wire Line
 	5000 3150 5750 3150
-Wire Wire Line
-	5000 3150 5000 3350
 Wire Wire Line
 	6600 3750 6050 3750
 Wire Wire Line
@@ -129,4 +114,19 @@ F 3 "http://www.jameco.com/Jameco/Products/ProdDS/1538777.pdf" H 6050 3600 50  0
 $EndComp
 Connection ~ 6050 3450
 Connection ~ 6050 3750
+$Comp
+L Transistor:BCP51 Q1
+U 1 1 5A469B52
+P 5950 3150
+F 0 "Q1" H 6141 3104 50  0000 L CNN
+F 1 "BCP51" H 6141 3195 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223-3_TabPin2" H 6150 3075 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/BCP51_52_53.pdf" H 5950 3150 50  0001 L CNN
+	1    5950 3150
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5000 3150 5000 3250
+Wire Wire Line
+	5000 3250 4950 3250
 $EndSCHEMATC
